@@ -4,7 +4,7 @@ Para la clase CuentaBancaria, cree un método aplicar_cuota_manejo que aplique u
 Para la clase CuentaBancaria, cree un método mostrar_detalles que imprima por consola los detalles de la cuenta bancaria.
 '''
 class CuentaBancaria:
-    def __init__(self, numero_cuenta: str, propietarios: list[str], balance: float):
+    def __init__(self, numero_cuenta: str, propietarios: str, balance: float):
         self.numero_cuenta = numero_cuenta
         self.propietarios = propietarios
         self.balance = balance
@@ -26,5 +26,5 @@ class CuentaBancaria:
 
     def mostrar_detalles(self):
         print(f'Número de cuenta: {self.numero_cuenta}')
-        print(f'Propietarios: {", ".join(self.propietarios)}')
+        print(f'Propietarios: {self.propietarios}')
         print(f'Balance: {self.balance}')

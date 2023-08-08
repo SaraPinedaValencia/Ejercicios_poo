@@ -2,7 +2,7 @@
 Los tres atributos se deben inicializar en el constructor con valores recibidos como parámetros.'''
 
 class CuentaBancaria:
-    def __init__(self, numero_cuenta: str, propietarios: list[str], balance: float):
+    def __init__(self, numero_cuenta: str, propietarios: str, balance: float):
         self.numero_cuenta = numero_cuenta
         self.propietarios = propietarios
         self.balance = balance
